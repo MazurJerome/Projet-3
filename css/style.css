@@ -1,11 +1,71 @@
-h1 {
-  color: aqua;
+* {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.flexRaw {
+  display: flex;
+  flex-direction: row;
+}
+
+.flecColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRawR {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flexColumnR {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.justC {
+  justify-content: center;
+}
+
+.justSA {
+  justify-content: space-around;
+}
+
+.justSB {
+  justify-content: space-between;
+}
+
+.alignC {
+  align-items: center;
+}
+
+.alignStr {
+  align-items: stretch;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+
+.alignStar {
+  align-items: flex-start;
+}
+
+.enTete h1 {
+  color: #9356DC;
+  width: 60%;
+  font-size: 20px;
+  justify-content: center;
 }
 
 .bouton {
   border-radius: 25px;
-  border: 1px solid black;
-  background-color: linear-gradient(blue, pink);
+  height: 40px;
+  width: 60%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+.bouton a {
+  text-decoration: none;
+  color: white;
 }
 
 .boutonResto img {

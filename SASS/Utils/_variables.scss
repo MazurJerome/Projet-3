@@ -1,0 +1,43 @@
+$couleurPrimaire : #9356DC ;
+$couleurSecondaire : #FF79DA ;
+$couleurTertiare : #99E2D0 ;
+
+.flexRaw {
+    display: flex;
+    flex-direction: row;
+}
+.flecColumn {
+    display: flex;
+    flex-direction: column;
+}
+.flexRawR {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flexColumnR {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.justC {
+    justify-content: center;
+}
+.justSA {
+    justify-content: space-around;
+}
+.justSB {
+    justify-content: space-between;
+}
+
+.alignC {
+    align-items: center;
+}
+.alignStr {
+    align-items: stretch;
+}
+.alignEnd {
+    align-items: flex-end;
+}
+.alignStar {
+    align-items: flex-start;
+}
