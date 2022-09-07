@@ -58,21 +58,41 @@
   align-items: flex-start;
 }
 
-.enTete h1 {
-  width: 60%;
-  font-size: 20px;
-  justify-content: center;
+.textAlignC {
+  text-align: center;
+}
+
+header img {
+  width: 40%;
+  padding: 20px 0 10px 0;
 }
 
 form {
-  background-color: rgb(246, 244, 244);
+  background-color: #EAEAEA;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 form input {
-  background-color: rgb(246, 244, 244);
+  background-color: #EAEAEA;
   border: none;
+}
+form input:focus-visible {
+  border: none;
+}
+
+.enTete {
+  background-color: #F6F6F6;
+}
+.enTete h1 {
+  width: 60%;
+  font-size: 20px;
+  justify-content: center;
+}
+.enTete p {
+  width: 80%;
+  font-size: 15px;
+  justify-content: center;
 }
 
 .bouton {
