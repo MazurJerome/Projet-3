@@ -4,12 +4,23 @@
 .enTete {
     
     h1 {
-    color: $couleurPrimaire;
     width: 60%;
     font-size: 20px;
     justify-content: center;
 }
 }
+form {
+    background-color: rgb(246, 244, 244);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    input {
+        background-color: rgb(246, 244, 244);
+        border: none;
+    }
+}
+
 .bouton {
     border-radius: 25px;
     height: 40px;
