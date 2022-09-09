@@ -69,13 +69,18 @@ header img {
 
 form {
   background-color: #EAEAEA;
-  padding: 20px;
+  padding: 20px 0px 20px 20px;
   display: flex;
   justify-content: center;
+}
+form i {
+  padding: 5px 5px 5px 20px;
 }
 form input {
   background-color: #EAEAEA;
   border: none;
+  font-weight: bold;
+  padding: 5px;
 }
 form input:focus-visible {
   border: none;
