@@ -99,9 +99,73 @@ form {
     }
 }
 
+.restaurant {
+    background-color: #f6f6f6;
+    padding: 20px;
+    margin: 30px 0 0 0;
+
+}
+
 .boutonResto {
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 3px 5px 1px #e9e9e9;
+
     img {
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        height: 200px;
+    }
+    h3 {
+        font-size: 20px;
+        padding: 10px 10px 5px 10px;
+        margin: 0;
+    }
+    p {
+        font-size: 18px;
+        padding: 0 10px 15px 10px;
+        margin: 0;
+    }
+    i {
+        font-size: 30px;
+        padding: 20px 30px 0 0;
+    }
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+
+    h2 {
+        font-size: 20px;
+        padding: 20px;
+        margin: 0;
+    }
+    .mFoot {  
+        font-size: 18px;
+        padding: 10px 0 0 20px;
+        margin: 0;
+
+        i {
+            padding-right: 10px;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+        padding-inline-start: 0px;
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin: 0;
+        li {
+            padding: 10px 0 0 20px;
+        }
     }
 }

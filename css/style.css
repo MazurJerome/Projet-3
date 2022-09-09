@@ -3,14 +3,21 @@
   src: url("../../Fonts/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf") format("ttf");
 }
 @font-face {
-  font-family: "shrikhand";
-  src: url("../../Fonts/Shrikhand-Regular.ttf") format("ttf");
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/shrikhand-v11-latin-ext_latin_gujarati-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/shrikhand-v11-latin-ext_latin_gujarati-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/shrikhand-v11-latin-ext_latin_gujarati-regular.woff2") format("woff2"), url("../fonts/shrikhand-v11-latin-ext_latin_gujarati-regular.woff") format("woff"), url("../fonts/shrikhand-v11-latin-ext_latin_gujarati-regular.ttf") format("truetype"), url("../fonts/shrikhand-v11-latin-ext_latin_gujarati-regular.svg#Shrikhand") format("svg"); /* Legacy iOS */
 }
 * {
   font-family: "roboto", sans-serif;
 }
 
-.flexRaw {
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.flexRow {
   display: flex;
   flex-direction: row;
 }
@@ -20,7 +27,7 @@
   flex-direction: column;
 }
 
-.flexRawR {
+.flexRowR {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -152,9 +159,69 @@ form input:focus-visible {
   color: #7e7e7e;
 }
 
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 30px 0 0 0;
+}
+
+.boutonResto {
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 3px 5px 1px #e9e9e9;
+}
 .boutonResto img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
+}
+.boutonResto h3 {
+  font-size: 20px;
+  padding: 10px 10px 5px 10px;
+  margin: 0;
+}
+.boutonResto p {
+  font-size: 18px;
+  padding: 0 10px 15px 10px;
+  margin: 0;
+}
+.boutonResto i {
+  font-size: 30px;
+  padding: 20px 30px 0 0;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer h2 {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0;
+}
+footer .mFoot {
+  font-size: 18px;
+  padding: 10px 0 0 20px;
+  margin: 0;
+}
+footer .mFoot i {
+  padding-right: 10px;
+}
+footer .mFoot p {
+  padding: 0;
+  margin: 0;
+}
+footer ul {
+  text-decoration: none;
+  list-style: none;
+  padding-inline-start: 0px;
+  font-size: 18px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+footer ul li {
+  padding: 10px 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

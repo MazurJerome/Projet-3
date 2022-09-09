@@ -25,7 +25,7 @@
 	</head>
 	<body>
 		<header>
-			<div class="flexRaw justC alignC">
+			<div class="flexRow justC alignC">
 				<img src="Images/ohmyfood.png" alt="logo ohmyfood" />
 			</div>
 
@@ -41,7 +41,7 @@
 				<p>
 					Découvrez des restaurants d'éxception, séléctionnés par nos soins.
 				</p>
-				<div class="bouton flexRaw justC alignC">
+				<div class="bouton flexRow justC alignC">
 					<a href="#">Explorer nos restaurants</a>
 				</div>
 			</div>
@@ -74,44 +74,60 @@
 			</div>
 		</section>
 
-		<section>
-			<h2>restaurant</h2>
+		<section class="restaurant">
+			<h2>Restaurants</h2>
 			<div class="grpBoutonResto">
 				<div class="boutonResto">
 					<img src="Images/la-palette-du-gout.jpg" alt="" />
-					<h3>La palette du goût</h3>
-					<p>Ménilmontant</p>
-					<i class="fa-regular fa-heart"></i>
+					<div class="flexRow justSB">
+						<div class="flexColumn">
+							<h3>La palette du goût</h3>
+							<p>Ménilmontant</p>
+						</div>
+						<i class="fa-regular fa-heart"></i>
+					</div>
 				</div>
 				<div class="boutonResto">
 					<img src="Images/la-note-enchantee.jpg" alt="" />
-					<h3>La note enchantée</h3>
-					<p>Charonne</p>
-					<i class="fa-regular fa-heart"></i>
+					<div class="flexRow justSB">
+						<div class="flexColumn">
+							<h3>La note enchantée</h3>
+							<p>Charonne</p>
+						</div>
+						<i class="fa-regular fa-heart"></i>
+					</div>
 				</div>
 				<div class="boutonResto">
 					<img src="Images/a-la-francaise.jpg" alt="" />
-					<h3>À la francaise</h3>
-					<p>Cité Rouge</p>
-					<i class="fa-regular fa-heart"></i>
+					<div class="flexRow justSB">
+						<div class="flexColumn">
+							<h3>À la francaise</h3>
+							<p>Cité Rouge</p>
+						</div>
+						<i class="fa-regular fa-heart"></i>
+					</div>
 				</div>
 				<div class="boutonResto">
 					<img src="Images/le-delice-des-sens.jpg" alt="" />
-					<h3>Le délice des sens</h3>
-					<p>Folie-Méricourt</p>
-					<i class="fa-regular fa-heart"></i>
+					<div class="flexRow justSB">
+						<div class="flexColumn">
+							<h3>Le délice des sens</h3>
+							<p>Folie-Méricourt</p>
+						</div>
+						<i class="fa-regular fa-heart"></i>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<footer>
-			<img src="Images/ohmyfood.png" alt="logo ohmyfood" />
+			<h2>ohmyfood</h2>
 			<div>
-				<div>
+				<div class="mFoot flexRow alignC">
 					<i class="fa-solid fa-utensils"></i>
 					<p>Proposer un restaurant</p>
 				</div>
-				<div>
+				<div class="mFoot flexRow alignC">
 					<i class="fa-solid fa-handshake-angle"></i>
 					<p>Devenir partenaire</p>
 				</div>
