@@ -219,6 +219,7 @@ form input:focus-visible {
   background-image: linear-gradient(#FF79DA, #9356DC);
 }
 .bouton a {
+  padding: 16px 44px;
   text-decoration: none;
   color: white;
 }
@@ -271,6 +272,10 @@ form input:focus-visible {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
+}
+.boutonResto a {
+  text-decoration: none;
+  color: black;
 }
 .boutonResto img {
   width: 100%;
@@ -461,6 +466,10 @@ form input:focus-visible {
 footer {
   background-color: #353535;
   color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 footer h2 {
   font-size: 20px;
