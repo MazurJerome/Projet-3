@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* roboto-100 - latin-ext_latin */
 @font-face {
   font-family: "Roboto";
@@ -357,42 +356,42 @@ form input:focus-visible {
   padding: 20px 30px 0 0;
 }
 
-.entrée {
+.entree {
   background-color: #f6f6f6;
   padding: 30px 0 10px 0;
   margin: 0;
 }
-.entrée h4 {
+.entree h4 {
   font-size: 18px;
   font-weight: 300;
   padding: 0 0 5px 20px;
   margin: 0;
 }
-.entrée ul {
+.entree ul {
   text-decoration: none;
   list-style: none;
   padding-inline-start: 0px;
 }
-.entrée ul h5 {
+.entree ul h5 {
   padding: 0;
   margin: 12px 0 10px 9px;
   font-size: 20px;
 }
-.entrée ul p {
+.entree ul p {
   padding: 0;
   margin: 0 0 10px 9px;
   font-size: 16px;
 }
-.entrée li {
+.entree li {
   border-radius: 20px;
   background-color: white;
   margin: 10px 10px 15px 16px;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
 }
-.entrée i {
+.entree i {
   display: none;
 }
-.entrée .prix {
+.entree .prix {
   width: 40px;
   display: flex;
   justify-content: center;

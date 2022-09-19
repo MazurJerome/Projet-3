@@ -211,7 +211,7 @@ form {
     
 }
 
-.entrée {
+.entree {
     background-color: #f6f6f6;
     padding: 30px 0 10px 0;
     margin: 0;
@@ -349,6 +349,11 @@ form {
     
     }
 }
+.barreTitreMenu {
+    width: 45px;
+    margin: 0 0 15px 20px;
+    border-bottom: 3.5px solid $couleurTertiare;
+}
 .Commander {
     background-color: #F6F6F6;
     padding: 10px;
@@ -393,9 +398,4 @@ footer {
             padding: 10px 0 0 20px;
         }
     }
-}
-.barreTitreMenu {
-    width: 45px;
-    margin: 0 0 15px 20px;
-    border-bottom: 3.5px solid $couleurTertiare;
 }
