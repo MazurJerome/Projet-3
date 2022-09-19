@@ -536,4 +536,56 @@ footer ul li {
   border-bottom: 3.5px solid #99E2D0;
 }
 
+.cadreImage {
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  height: 190px;
+  position: relative;
+}
+.cadreImage .img1 {
+  position: absolute;
+  top: -60px;
+  left: -10px;
+  width: 380px;
+  height: 250px;
+}
+.cadreImage .img2 {
+  position: absolute;
+  top: -160px;
+  height: 450px;
+}
+.cadreImage .img3 {
+  position: absolute;
+  top: -60px;
+  left: -5px;
+  width: 380px;
+  height: 250px;
+}
+.cadreImage .img4 {
+  position: absolute;
+  top: -60px;
+  height: 250px;
+}
+
+.cadreImage1 {
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  height: 270px;
+  position: relative;
+}
+.cadreImage1 .img11 {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 445px;
+  height: 300px;
+}
+.cadreImage1 .img21 {
+  position: absolute;
+  top: -100px;
+  height: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */
