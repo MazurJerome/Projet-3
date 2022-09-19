@@ -1,6 +1,9 @@
 @import "./Base/_police.scss";
 @import "./Utils/_variables.scss";
 
+* {
+cursor: pointer ;
+}
 
 .logoTitre {
     position: relative;
@@ -216,7 +219,7 @@ form {
     h4 {
         font-size: 18px;
         font-weight: 300;
-        padding: 0 0 22px 20px;
+        padding: 0 0 5px 20px;
         margin: 0;
     }
     ul {
@@ -261,7 +264,7 @@ form {
     
     h4 {
         font-size: 18px;
-        padding: 0 0 22px 20px;
+        padding: 0 0 5px 20px;
         font-weight: 300;
         margin: 0;
     }
@@ -308,7 +311,7 @@ form {
     h4 {
         font-size: 18px;
         font-weight: 300;
-        padding: 0 0 22px 20px;
+        padding: 0 0 5px 20px;
         margin: 0;
     }
     ul {
@@ -390,4 +393,9 @@ footer {
             padding: 10px 0 0 20px;
         }
     }
+}
+.barreTitreMenu {
+    width: 45px;
+    margin: 0 0 15px 20px;
+    border-bottom: 3.5px solid $couleurTertiare;
 }

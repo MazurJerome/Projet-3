@@ -162,6 +162,10 @@ footer h2 {
   text-align: center;
 }
 
+* {
+  cursor: pointer;
+}
+
 .logoTitre {
   position: relative;
 }
@@ -361,7 +365,7 @@ form input:focus-visible {
 .entrée h4 {
   font-size: 18px;
   font-weight: 300;
-  padding: 0 0 22px 20px;
+  padding: 0 0 5px 20px;
   margin: 0;
 }
 .entrée ul {
@@ -404,7 +408,7 @@ form input:focus-visible {
 }
 .plats h4 {
   font-size: 18px;
-  padding: 0 0 22px 20px;
+  padding: 0 0 5px 20px;
   font-weight: 300;
   margin: 0;
 }
@@ -449,7 +453,7 @@ form input:focus-visible {
 .desserts h4 {
   font-size: 18px;
   font-weight: 300;
-  padding: 0 0 22px 20px;
+  padding: 0 0 5px 20px;
   margin: 0;
 }
 .desserts ul {
@@ -525,6 +529,12 @@ footer ul {
 }
 footer ul li {
   padding: 10px 0 0 20px;
+}
+
+.barreTitreMenu {
+  width: 45px;
+  margin: 0 0 15px 20px;
+  border-bottom: 3.5px solid #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
