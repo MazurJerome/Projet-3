@@ -25,8 +25,8 @@
 	</head>
 	<body>
 		<header>
-			<div class="flexRaw justC alignC">
-				<img src="Images/ohmyfood.png" alt="logo ohmyfood" />
+			<div class="logoTitre flexRow justC alignC">
+				<img class="logo" src="Images/ohmyfood.png" alt="logo ohmyfood" />
 			</div>
 
 			<form action="#" method="post">
@@ -41,7 +41,7 @@
 				<p>
 					Découvrez des restaurants d'éxception, séléctionnés par nos soins.
 				</p>
-				<div class="bouton flexRaw justC alignC">
+				<div class="bouton flexRow justC alignC">
 					<a href="#">Explorer nos restaurants</a>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						<p>Composez votre menu</p>
 					</li>
 
-					<li>
+					<li class="boutonSelectionne">
 						<div class="cercle"></div>
 						<p class="numero">3</p>
 						<i class="fa-solid fa-store"></i>
@@ -74,52 +74,91 @@
 			</div>
 		</section>
 
-		<section>
-			<h2>restaurant</h2>
+		<section class="restaurant">
+			<h2>Restaurants</h2>
 			<div class="grpBoutonResto">
 				<div class="boutonResto">
-					<img src="Images/la-palette-du-gout.jpg" alt="" />
-					<h3>La palette du goût</h3>
-					<p>Ménilmontant</p>
-					<i class="fa-regular fa-heart"></i>
+					<a href="./LaPaletteDuGoût.html">
+						<img
+							src="Images/la-palette-du-gout.jpg"
+							alt="menu la palette du goût"
+						/>
+						<div class="logoNouveau flexRow justC alignC"><p>Nouveau</p></div>
+						<div class="flexRow justSB">
+							<div class="flexColumn">
+								<h3>La palette du goût</h3>
+								<p>Ménilmontant</p>
+							</div>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+					</a>
 				</div>
 				<div class="boutonResto">
-					<img src="Images/la-note-enchantee.jpg" alt="" />
-					<h3>La note enchantée</h3>
-					<p>Charonne</p>
-					<i class="fa-regular fa-heart"></i>
+					<a href="./LaNoteEnchantée.html">
+						<img
+							src="Images/la-note-enchantee.jpg"
+							alt="menu la note enchantée"
+						/>
+						<div class="logoNouveau flexRow justC alignC"><p>Nouveau</p></div>
+						<div class="flexRow justSB">
+							<div class="flexColumn">
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+							</div>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+					</a>
 				</div>
 				<div class="boutonResto">
-					<img src="Images/a-la-francaise.jpg" alt="" />
-					<h3>À la francaise</h3>
-					<p>Cité Rouge</p>
-					<i class="fa-regular fa-heart"></i>
+					<a href="./ALaFrancaise.html">
+						<img src="Images/a-la-francaise.jpg" alt="menu à la francaise" />
+						<div class="flexRow justSB">
+							<div class="flexColumn">
+								<h3>À la francaise</h3>
+								<p>Cité Rouge</p>
+							</div>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+					</a>
 				</div>
 				<div class="boutonResto">
-					<img src="Images/le-delice-des-sens.jpg" alt="" />
-					<h3>Le délice des sens</h3>
-					<p>Folie-Méricourt</p>
-					<i class="fa-regular fa-heart"></i>
+					<a href="./LeDéliceDesSens.html">
+						<img
+							src="Images/le-delice-des-sens.jpg"
+							alt="menu le délice des sens"
+						/>
+						<div class="flexRow justSB">
+							<div class="flexColumn">
+								<h3>Le délice des sens</h3>
+								<p>Folie-Méricourt</p>
+							</div>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
 
 		<footer>
-			<img src="Images/ohmyfood.png" alt="logo ohmyfood" />
+			<h2>ohmyfood</h2>
 			<div>
-				<div>
-					<i class="fa-solid fa-utensils"></i>
-					<p>Proposer un restaurant</p>
-				</div>
-				<div>
-					<i class="fa-solid fa-handshake-angle"></i>
-					<p>Devenir partenaire</p>
-				</div>
+				<a href="#"
+					><div class="mFoot flexRow alignC">
+						<i class="fa-solid fa-utensils"></i>
+						<p>Proposer un restaurant</p>
+					</div></a
+				>
+				<a href="#"
+					><div class="mFoot flexRow alignC">
+						<i class="fa-solid fa-handshake-angle"></i>
+						<p>Devenir partenaire</p>
+					</div></a
+				>
 			</div>
 			<div>
 				<ul>
-					<li>Mention légales</li>
-					<li>Contact</li>
+					<a href="#"><li>Mention légales</li></a>
+					<a href="mailto:#"><li>Contact</li></a>
 				</ul>
 			</div>
 		</footer>

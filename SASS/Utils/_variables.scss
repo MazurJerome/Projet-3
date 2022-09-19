@@ -2,7 +2,7 @@ $couleurPrimaire : #9356DC ;
 $couleurSecondaire : #FF79DA ;
 $couleurTertiare : #99E2D0 ;
 
-.flexRaw {
+.flexRow {
     display: flex;
     flex-direction: row;
 }
@@ -10,7 +10,7 @@ $couleurTertiare : #99E2D0 ;
     display: flex;
     flex-direction: column;
 }
-.flexRawR {
+.flexRowR {
     display: flex;
     flex-direction: row-reverse;
 }
