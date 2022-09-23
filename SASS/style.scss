@@ -449,3 +449,88 @@ footer {
         height: 500px;
     }
 }
+@media (min-width: 769px) {
+    .fonctio {
+        ol{
+            display: flex;
+            flex-direction: row;
+
+            li{
+                width: 20%;
+                height: 30px;
+                font-weight: 12px;
+            }
+        }
+    }
+    .restaurant {
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .grpBoutonResto {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .boutonResto {
+                margin: 50px;
+                width: 35%;
+                max-width: 325px;
+            }
+    }
+    .boutonResto1 {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+    }
+    .entree{
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        .barreTitreMenu {
+            display: none;
+        }
+        li {
+            width: 30%;
+        }
+    }
+    .plats {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        .barreTitreMenu {
+            display: none;
+        }
+        li {
+            width: 30%;
+        }
+    }
+    .desserts {
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        .barreTitreMenu {
+            display: none;
+        }
+        li {
+            width: 30%;
+        }
+    }
+    footer {
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .listFoot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

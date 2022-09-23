@@ -588,4 +588,71 @@ footer ul li {
   height: 500px;
 }
 
+@media (min-width: 769px) {
+  .fonctio ol {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctio ol li {
+    width: 20%;
+    height: 30px;
+    font-weight: 12px;
+  }
+  .grpBoutonResto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .grpBoutonResto .boutonResto {
+    margin: 50px;
+    width: 35%;
+    max-width: 325px;
+  }
+  .boutonResto1 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .entree ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .entree .barreTitreMenu {
+    display: none;
+  }
+  .entree li {
+    width: 30%;
+  }
+  .plats ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .plats .barreTitreMenu {
+    display: none;
+  }
+  .plats li {
+    width: 30%;
+  }
+  .desserts ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .desserts .barreTitreMenu {
+    display: none;
+  }
+  .desserts li {
+    width: 30%;
+  }
+  footer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .listFoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
