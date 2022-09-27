@@ -165,13 +165,26 @@ footer h2 {
   cursor: pointer;
 }
 
-/* animation */
-/* load */
 .loader {
   z-index: 0;
   position: relative;
-  animation: chargement 2s ease-out;
+  -webkit-animation: chargement 4s ease-out;
+          animation: chargement 4s ease-out;
   opacity: 0;
+}
+@-webkit-keyframes chargement {
+  0% {
+    z-index: 999;
+    opacity: 1;
+  }
+  95% {
+    z-index: 999;
+    opacity: 1;
+  }
+  100% {
+    z-index: 999;
+    opacity: 0;
+  }
 }
 @keyframes chargement {
   0% {
@@ -206,31 +219,49 @@ footer h2 {
   left: 35%;
   top: 100px;
   transform: skew(-10deg) translateX(50px) rotate(45deg);
-  animation: rot1 1.5s ease infinite;
+  -webkit-animation: rot1 1.5s ease infinite;
+          animation: rot1 1.5s ease infinite;
   border-color: #9356DC;
 }
 .loader .load2 {
   left: 35%;
   top: 100px;
   transform: skew(-10deg) rotate(165deg);
-  animation: rot2 1.5s ease infinite;
+  -webkit-animation: rot2 1.5s ease infinite;
+          animation: rot2 1.5s ease infinite;
   border-color: #FF79DA;
 }
 .loader .load3 {
   left: 35%;
   top: 100px;
   transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(285deg);
-  animation: rot3 1.5s ease infinite;
+  -webkit-animation: rot3 1.5s ease infinite;
+          animation: rot3 1.5s ease infinite;
   border-color: #99E2D0;
+}
+@-webkit-keyframes rot1 {
+  100% {
+    transform: skew(-10deg) translateX(50px) rotate(405deg);
+  }
 }
 @keyframes rot1 {
   100% {
     transform: skew(-10deg) translateX(50px) rotate(405deg);
   }
 }
+@-webkit-keyframes rot2 {
+  100% {
+    transform: skew(-10deg) rotate(525deg);
+  }
+}
 @keyframes rot2 {
   100% {
     transform: skew(-10deg) rotate(525deg);
+  }
+}
+@-webkit-keyframes rot3 {
+  100% {
+    transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(645deg);
   }
 }
 @keyframes rot3 {
@@ -239,121 +270,6 @@ footer h2 {
   }
 }
 
-/* menu 1*/
-.entree {
-  height: 280px;
-}
-.entree ul {
-  position: relative;
-}
-.entree ul li {
-  width: 380px;
-  position: absolute;
-}
-.entree ul .li1 {
-  top: 25px;
-  animation: chargementMenu1 1s;
-}
-.entree ul .li2 {
-  top: 110px;
-  animation: chargementMenu2 2s;
-}
-.entree ul .li3 {
-  top: 200px;
-  animation: chargementMenu3 3s;
-}
-
-.plats {
-  height: 280px;
-}
-.plats ul {
-  position: relative;
-}
-.plats ul li {
-  width: 380px;
-  position: absolute;
-}
-.plats ul .li1 {
-  top: 25px;
-  animation: chargementMenu1 1s;
-}
-.plats ul .li2 {
-  top: 110px;
-  animation: chargementMenu2 2s;
-}
-.plats ul .li3 {
-  top: 200px;
-  animation: chargementMenu3 3s;
-}
-
-.desserts {
-  height: 280px;
-  width: 100%;
-}
-.desserts ul {
-  position: relative;
-}
-.desserts ul li {
-  width: 380px;
-  position: absolute;
-}
-.desserts ul .li1 {
-  top: 25px;
-  animation: chargementMenu1 1s;
-}
-.desserts ul .li2 {
-  top: 110px;
-  animation: chargementMenu2 2s;
-}
-.desserts ul .li3 {
-  top: 200px;
-  animation: chargementMenu3 3s;
-}
-
-@keyframes chargementMenu1 {
-  0% {
-    top: 30px;
-    opacity: 0;
-  }
-  50% {
-    top: 30px;
-    opacity: 0;
-  }
-  100% {
-    top: 25px;
-    opacity: 1;
-  }
-}
-@keyframes chargementMenu2 {
-  0% {
-    opacity: 0;
-    top: 115px;
-  }
-  50% {
-    opacity: 0;
-    top: 115px;
-  }
-  100% {
-    opacity: 1;
-    top: 110px;
-  }
-}
-@keyframes chargementMenu3 {
-  0% {
-    opacity: 0;
-    top: 205px;
-  }
-  50% {
-    opacity: 0;
-    top: 205px;
-  }
-  100% {
-    opacity: 1;
-    top: 200px;
-  }
-}
-/* menu 2*/
-/* head */
 .logoTitre {
   position: relative;
 }
@@ -421,7 +337,8 @@ form input:focus-visible {
   padding: 20px;
 }
 .fonctio ol {
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
   list-style: none;
 }
 .fonctio li {
@@ -435,13 +352,6 @@ form input:focus-visible {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
-}
-.fonctio li:hover {
-  background-color: #f5edff;
-  box-shadow: 2px 6px 10px 2px #e9e9e9;
-}
-.fonctio li:hover i {
-  color: #9356DC;
 }
 .fonctio li .cercle {
   position: absolute;
@@ -462,6 +372,12 @@ form input:focus-visible {
 }
 .fonctio li p {
   padding-left: 10px;
+}
+.fonctio .boutonSelectionne {
+  background-color: #f5edff;
+}
+.fonctio .boutonSelectionne i {
+  color: #9356DC;
 }
 
 .restaurant {
@@ -516,7 +432,6 @@ form input:focus-visible {
   padding: 10px 5px;
 }
 
-/* menu */
 .boutonResto1 {
   background-color: white;
   margin: 10px 0;
@@ -561,7 +476,8 @@ form input:focus-visible {
 .entree ul {
   text-decoration: none;
   list-style: none;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 .entree ul h5 {
   padding: 0;
@@ -605,7 +521,8 @@ form input:focus-visible {
 .plats ul {
   text-decoration: none;
   list-style: none;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 .plats ul h5 {
   padding: 0;
@@ -649,7 +566,8 @@ form input:focus-visible {
 .desserts ul {
   text-decoration: none;
   list-style: none;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 .desserts ul h5 {
   padding: 0;
@@ -712,7 +630,8 @@ footer .mFoot p {
 footer ul {
   text-decoration: none;
   list-style: none;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
   font-size: 18px;
   padding-bottom: 20px;
   margin: 0;
@@ -779,8 +698,6 @@ footer ul li {
   height: 500px;
 }
 
-/*       */
-/* media */
 @media (min-width: 769px) {
   .fonctio ol {
     display: flex;
@@ -872,6 +789,4 @@ footer ul li {
     flex-direction: row;
     justify-content: space-around;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
