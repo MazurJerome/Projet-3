@@ -165,6 +165,8 @@ footer h2 {
   cursor: pointer;
 }
 
+/**/
+/**/
 /* animation */
 /* load */
 .loader {
@@ -241,21 +243,22 @@ footer h2 {
 
 /* menu 1*/
 .entree {
-  height: 280px;
+  height: 310px;
+  width: 100%;
 }
 .entree ul {
   position: relative;
 }
 .entree ul li {
-  width: 380px;
+  width: 330px;
   position: absolute;
 }
 .entree ul .li1 {
-  top: 25px;
+  top: 5px;
   animation: chargementMenu1 1s;
 }
 .entree ul .li2 {
-  top: 110px;
+  top: 100px;
   animation: chargementMenu2 2s;
 }
 .entree ul .li3 {
@@ -264,21 +267,22 @@ footer h2 {
 }
 
 .plats {
-  height: 280px;
+  height: 310px;
+  width: 100%;
 }
 .plats ul {
   position: relative;
 }
 .plats ul li {
-  width: 380px;
+  width: 330px;
   position: absolute;
 }
 .plats ul .li1 {
-  top: 25px;
+  top: 5px;
   animation: chargementMenu1 1s;
 }
 .plats ul .li2 {
-  top: 110px;
+  top: 100px;
   animation: chargementMenu2 2s;
 }
 .plats ul .li3 {
@@ -287,22 +291,22 @@ footer h2 {
 }
 
 .desserts {
-  height: 280px;
+  height: 310px;
   width: 100%;
 }
 .desserts ul {
   position: relative;
 }
 .desserts ul li {
-  width: 380px;
+  width: 330px;
   position: absolute;
 }
 .desserts ul .li1 {
-  top: 25px;
+  top: 5px;
   animation: chargementMenu1 1s;
 }
 .desserts ul .li2 {
-  top: 110px;
+  top: 100px;
   animation: chargementMenu2 2s;
 }
 .desserts ul .li3 {
@@ -312,30 +316,30 @@ footer h2 {
 
 @keyframes chargementMenu1 {
   0% {
-    top: 30px;
+    top: 10px;
     opacity: 0;
   }
   50% {
-    top: 30px;
+    top: 10px;
     opacity: 0;
   }
   100% {
-    top: 25px;
+    top: 5px;
     opacity: 1;
   }
 }
 @keyframes chargementMenu2 {
   0% {
     opacity: 0;
-    top: 115px;
+    top: 105px;
   }
   50% {
     opacity: 0;
-    top: 115px;
+    top: 105px;
   }
   100% {
     opacity: 1;
-    top: 110px;
+    top: 100px;
   }
 }
 @keyframes chargementMenu3 {
@@ -353,12 +357,18 @@ footer h2 {
   }
 }
 /* menu 2*/
+/**/
+/**/
+/**/
 /* head */
+/**/
+/**/
 .logoTitre {
   position: relative;
 }
 .logoTitre .logo {
   width: 40%;
+  max-width: 250px;
   padding: 20px 0 10px 0;
 }
 .logoTitre .flecheRetour {
@@ -408,6 +418,8 @@ form input:focus-visible {
   box-shadow: 1px 3px 5px 1px #cecece;
   height: 50px;
   width: 55%;
+  min-width: 125px;
+  max-width: 220px;
   margin: 10px 20px 50px 20px;
   background-image: linear-gradient(#FF79DA, #9356DC);
 }
@@ -516,7 +528,11 @@ form input:focus-visible {
   padding: 10px 5px;
 }
 
+/**/
+/**/
 /* menu */
+/**/
+/**/
 .boutonResto1 {
   background-color: white;
   margin: 10px 0;
@@ -545,6 +561,22 @@ form input:focus-visible {
 .boutonResto1 .restoMenu i {
   font-size: 30px;
   padding: 20px 30px 0 0;
+}
+
+.menu {
+  flex-direction: row;
+}
+.menu li {
+  width: 330px;
+  height: 80px;
+}
+.menu .menuText {
+  width: 200px;
+}
+.menu .menuText h5, .menu .menuText p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .entree {
@@ -593,7 +625,7 @@ form input:focus-visible {
 
 .plats {
   background-color: #f6f6f6;
-  padding: 5px 0 10px 0;
+  padding: 30px 0 10px 0;
   margin: 0;
 }
 .plats h4 {
@@ -637,7 +669,7 @@ form input:focus-visible {
 
 .desserts {
   background-color: #f6f6f6;
-  padding: 5px 0 10px 0;
+  padding: 30px 0 10px 0;
   margin: 0;
 }
 .desserts h4 {
@@ -780,8 +812,39 @@ footer ul li {
 }
 
 /*       */
+/**/
+/**/
 /* media */
-@media (min-width: 769px) {
+/**/
+/**/
+@media (min-width: 430px) and (max-width: 749px) {
+  .boutonResto1 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    box-shadow: none;
+  }
+  .boutonResto1 .cadreImage1 {
+    width: 325px;
+    border-radius: 25px;
+  }
+  .boutonResto1 .restoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 5px 1px #e9e9e9;
+    border-radius: 25% 10%;
+    height: 70px;
+    width: 325px;
+  }
+  .entree {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1059px) {
   .fonctio ol {
     display: flex;
     flex-direction: row;
@@ -830,8 +893,109 @@ footer ul li {
     width: 50%;
     max-width: 325px;
   }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #f6f6f6;
+  }
   .entree {
     padding-top: 30px;
+    width: 32%;
+  }
+  .entree .barreTitreMenu {
+    display: none;
+  }
+  .entree li {
+    width: 30%;
+  }
+  .plats {
+    width: 32%;
+  }
+  .plats .barreTitreMenu {
+    display: none;
+  }
+  .plats li {
+    width: 30%;
+  }
+  .desserts {
+    width: 32%;
+  }
+  .desserts .barreTitreMenu {
+    display: none;
+  }
+  .desserts li {
+    width: 30%;
+  }
+  footer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .listFoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1060px) {
+  .fonctio ol {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctio ol li {
+    width: 20%;
+    height: 30px;
+    font-weight: 12px;
+  }
+  .restaurant h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .grpBoutonResto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .grpBoutonResto .boutonResto {
+    margin: 50px 80px;
+    width: 35%;
+    max-width: 325px;
+  }
+  .boutonResto1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+    background-color: #f6f6f6;
+    box-shadow: none;
+  }
+  .boutonResto1 .cadreImage1 {
+    width: 50%;
+    max-width: 325px;
+    border-radius: 25px;
+  }
+  .boutonResto1 .restoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 5px 1px #e9e9e9;
+    border-radius: 25% 10%;
+    height: 70px;
+    width: 50%;
+    max-width: 325px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    background-color: #f6f6f6;
+  }
+  .entree {
+    padding-top: 30px;
+    width: 32%;
   }
   .entree ul {
     display: flex;
@@ -843,6 +1007,9 @@ footer ul li {
   .entree li {
     width: 30%;
   }
+  .plats {
+    width: 32%;
+  }
   .plats ul {
     display: flex;
     flex-direction: row;
@@ -852,6 +1019,9 @@ footer ul li {
   }
   .plats li {
     width: 30%;
+  }
+  .desserts {
+    width: 32%;
   }
   .desserts ul {
     display: flex;
