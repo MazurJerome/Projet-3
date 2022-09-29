@@ -240,6 +240,20 @@ footer h2 {
     transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(645deg);
   }
 }
+@keyframes prixSlide {
+  0% {
+    display: flex;
+    width: 0;
+  }
+  10% {
+    display: flex;
+    width: 40px;
+  }
+  100% {
+    display: flex;
+    width: 40px;
+  }
+}
 
 /* menu 1*/
 .entree {
@@ -250,7 +264,7 @@ footer h2 {
   position: relative;
 }
 .entree ul li {
-  width: 330px;
+  width: 375px;
   position: absolute;
 }
 .entree ul .li1 {
@@ -274,7 +288,7 @@ footer h2 {
   position: relative;
 }
 .plats ul li {
-  width: 330px;
+  width: 375px;
   position: absolute;
 }
 .plats ul .li1 {
@@ -298,7 +312,7 @@ footer h2 {
   position: relative;
 }
 .desserts ul li {
-  width: 330px;
+  width: 375px;
   position: absolute;
 }
 .desserts ul .li1 {
@@ -354,6 +368,28 @@ footer h2 {
   100% {
     opacity: 1;
     top: 200px;
+  }
+}
+@keyframes prixSlide {
+  0% {
+    width: 0px;
+  }
+  10% {
+    width: 70px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+@keyframes iconeSlide {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* menu 2*/
@@ -567,16 +603,63 @@ form input:focus-visible {
   flex-direction: row;
 }
 .menu li {
-  width: 330px;
+  width: 375px;
   height: 80px;
 }
-.menu .menuText {
-  width: 200px;
+.menu .cadreMenu {
+  width: 375px;
+  overflow: hidden;
 }
-.menu .menuText h5, .menu .menuText p {
+.menu .cadreMenu .menuText {
+  display: flex;
+  flex-direction: column;
+  flex: 1 5 auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu .cadreMenu .menuText h5, .menu .cadreMenu .menuText p {
+  padding: 0;
+  margin: 12px 0 10px 9px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .cadreMenu .menuText h5 {
+  font-size: 20px;
+}
+.menu .cadreMenu .menuText p {
+  font-size: 16px;
+}
+.menu .cadreMenu .prix {
+  min-width: 40px;
+  padding: 10px 10px 5px 10px;
+  font-weight: bold;
+}
+.menu .cadreMenu .iconeMenu {
+  position: relative;
+  width: 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .cadreMenu .iconeMenu i {
+  position: absolute;
+  left: 20px;
+  padding: 0;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 30px;
+  color: #99E2D0;
+}
+
+li:hover .iconeMenu {
+  animation: prixSlide 3s;
+}
+
+li:hover i {
+  animation: iconeSlide 1s ease-in-out;
 }
 
 .entree {
@@ -595,32 +678,11 @@ form input:focus-visible {
   list-style: none;
   padding-inline-start: 0px;
 }
-.entree ul h5 {
-  padding: 0;
-  margin: 12px 0 10px 9px;
-  font-size: 20px;
-}
-.entree ul p {
-  padding: 0;
-  margin: 0 0 10px 9px;
-  font-size: 16px;
-}
 .entree li {
   border-radius: 20px;
   background-color: white;
   margin: 10px 10px 15px 16px;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
-}
-.entree i {
-  display: none;
-}
-.entree .prix {
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-weight: bold;
-  padding: 10px;
 }
 
 .plats {
