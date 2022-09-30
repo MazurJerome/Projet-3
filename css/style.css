@@ -385,9 +385,6 @@ footer h2 {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(180deg);
-  }
   100% {
     transform: rotate(360deg);
   }
@@ -643,6 +640,8 @@ form input:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 0 5px 5px;
+  border-radius: 0 20px 20px 0;
 }
 .menu .cadreMenu .iconeMenu i {
   position: absolute;
@@ -662,120 +661,32 @@ li:hover i {
   animation: iconeSlide 1s ease-in-out;
 }
 
-.entree {
+.entree, .plats, .desserts {
   background-color: #f6f6f6;
   padding: 30px 0 10px 0;
   margin: 0;
 }
-.entree h4 {
+.entree h4, .plats h4, .desserts h4 {
   font-size: 18px;
   font-weight: 300;
   padding: 0 0 5px 20px;
   margin: 0;
 }
-.entree ul {
+.entree ul, .plats ul, .desserts ul {
   text-decoration: none;
   list-style: none;
   padding-inline-start: 0px;
 }
-.entree li {
+.entree li, .plats li, .desserts li {
   border-radius: 20px;
   background-color: white;
   margin: 10px 10px 15px 16px;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
-}
-
-.plats {
-  background-color: #f6f6f6;
-  padding: 30px 0 10px 0;
-  margin: 0;
-}
-.plats h4 {
-  font-size: 18px;
-  padding: 0 0 5px 20px;
-  font-weight: 300;
-  margin: 0;
-}
-.plats ul {
-  text-decoration: none;
-  list-style: none;
-  padding-inline-start: 0px;
-}
-.plats ul h5 {
-  padding: 0;
-  margin: 12px 0 10px 9px;
-  font-size: 20px;
-}
-.plats ul p {
-  padding: 0;
-  margin: 0 0 10px 9px;
-  font-size: 16px;
-}
-.plats li {
-  border-radius: 20px;
-  background-color: white;
-  margin: 10px 10px 15px 16px;
-  box-shadow: 1px 3px 5px 1px #e9e9e9;
-}
-.plats i {
-  display: none;
-}
-.plats .prix {
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.desserts {
-  background-color: #f6f6f6;
-  padding: 30px 0 10px 0;
-  margin: 0;
-}
-.desserts h4 {
-  font-size: 18px;
-  font-weight: 300;
-  padding: 0 0 5px 20px;
-  margin: 0;
-}
-.desserts ul {
-  text-decoration: none;
-  list-style: none;
-  padding-inline-start: 0px;
-}
-.desserts ul h5 {
-  padding: 0;
-  margin: 12px 0 10px 9px;
-  font-size: 20px;
-}
-.desserts ul p {
-  padding: 0;
-  margin: 0 0 10px 9px;
-  font-size: 16px;
-}
-.desserts li {
-  border-radius: 20px;
-  background-color: white;
-  margin: 10px 10px 15px 16px;
-  box-shadow: 1px 3px 5px 1px #e9e9e9;
-}
-.desserts i {
-  display: none;
-}
-.desserts .prix {
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-weight: bold;
-  padding: 10px;
 }
 
 .Commander {
   background-color: #F6F6F6;
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
 }
 
 footer {
