@@ -279,6 +279,10 @@ footer h2 {
   top: 200px;
   animation: chargementMenu3 3s;
 }
+.entree ul .li4 {
+  top: 300px;
+  animation: chargementMenu4 4s;
+}
 
 .plats {
   height: 310px;
@@ -370,6 +374,20 @@ footer h2 {
     top: 200px;
   }
 }
+@keyframes chargementMenu4 {
+  0% {
+    opacity: 0;
+    top: 305px;
+  }
+  50% {
+    opacity: 0;
+    top: 305px;
+  }
+  100% {
+    opacity: 1;
+    top: 300px;
+  }
+}
 @keyframes prixSlide {
   0% {
     width: 0px;
@@ -389,7 +407,6 @@ footer h2 {
     transform: rotate(360deg);
   }
 }
-/* menu 2*/
 /**/
 /**/
 /**/
@@ -652,13 +669,11 @@ form input:focus-visible {
   border-radius: 30px;
   color: #99E2D0;
 }
-
-li:hover .iconeMenu {
-  animation: prixSlide 3s;
+.menu li:hover .iconeMenu {
+  animation: prixSlide 3s forwards;
 }
-
-li:hover i {
-  animation: iconeSlide 1s ease-in-out;
+.menu li:hover i {
+  animation: iconeSlide 1s forwards;
 }
 
 .entree, .plats, .desserts {
@@ -682,6 +697,10 @@ li:hover i {
   background-color: white;
   margin: 10px 10px 15px 16px;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
+}
+
+.menu .menu4P {
+  height: 415px;
 }
 
 .Commander {
@@ -817,7 +836,7 @@ footer ul li {
     padding-top: 60px;
   }
 }
-@media (min-width: 750px) and (max-width: 1059px) {
+@media (min-width: 750px) and (max-width: 1199px) {
   .fonctio ol {
     display: flex;
     flex-direction: row;
@@ -911,7 +930,7 @@ footer ul li {
     justify-content: space-around;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 1200px) {
   .fonctio ol {
     display: flex;
     flex-direction: row;
@@ -976,9 +995,6 @@ footer ul li {
   }
   .entree .barreTitreMenu {
     display: none;
-  }
-  .entree li {
-    width: 30%;
   }
   .plats {
     width: 32%;

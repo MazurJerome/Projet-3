@@ -125,6 +125,10 @@ cursor: pointer ;
                 top: 200px;
                 animation: chargementMenu3 3s;
             }
+            .li4 {
+                top: 300px;
+                animation: chargementMenu4 4s;
+            }
         } 
     }
       .plats {
@@ -222,6 +226,20 @@ cursor: pointer ;
         top: 200px;
     }
   }
+  @keyframes chargementMenu4 {
+    0% {
+        opacity: 0;
+        top: 305px;
+    }
+    50% {
+        opacity: 0;
+        top: 305px;
+    }
+    100% {
+        opacity: 1;
+        top: 300px;
+    }
+  }
   @keyframes prixSlide {
     0%{
         width: 0px;
@@ -241,7 +259,6 @@ cursor: pointer ;
         transform: rotate(360deg);
     }
   }
-/* menu 2*/
 
 /**/
 /**/
@@ -526,13 +543,14 @@ form {
                 }
             } 
         }
-    }
+    
     li:hover .iconeMenu{
-            animation: prixSlide 3s;
+            animation: prixSlide 3s forwards;
         }
     li:hover i{
-            animation:iconeSlide 1s ease-in-out;
+            animation:iconeSlide 1s forwards;
         }
+    }
 
 .entree, .plats, .desserts {
     background-color: #f6f6f6;
@@ -559,7 +577,9 @@ form {
     box-shadow: 1px 3px 5px 1px #e9e9e9;
     }
 }
-
+.menu .menu4P {
+    height: 415px;
+}
 .Commander {
     background-color: #F6F6F6;
     padding: 30px 10px 10px 10px;
@@ -695,7 +715,7 @@ footer {
     }
 }
 
-@media (min-width: 750px) and (max-width: 1059px) {
+@media (min-width: 750px) and (max-width: 1199px) {
     .fonctio {
         ol{
             display: flex;
@@ -801,7 +821,7 @@ footer {
         justify-content: space-around;
     }
 }
-@media (min-width: 1060px) {
+@media (min-width: 1200px) {
     .fonctio {
         ol{
             display: flex;
@@ -874,9 +894,7 @@ footer {
         .barreTitreMenu {
             display: none;
         }
-        li {
-            width: 30%;
-        }
+        
     }
     .plats {
         width: 32%;
