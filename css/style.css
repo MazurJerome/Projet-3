@@ -539,6 +539,7 @@ form input:focus-visible {
   overflow: hidden;
   box-shadow: 1px 3px 5px 1px #e9e9e9;
   position: relative;
+  max-width: 360px;
 }
 .boutonResto a {
   text-decoration: none;
@@ -578,40 +579,27 @@ form input:focus-visible {
 }
 
 body .coeurI {
-  width: 75px;
-  height: 75px;
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
+  align-items: center;
+  width: 90px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
 }
-body .coeurI .rondGauche {
-  z-index: 1;
-  width: 15px;
-  height: 15px;
-  border-radius: 20px;
+body .coeurI .i1 {
+  width: 30px;
   position: absolute;
-  top: 24px;
-  left: 22px;
-  background-color: #0E8F70;
-}
-body .coeurI .rondDroite {
-  z-index: 1;
-  width: 15px;
-  height: 15px;
-  border-radius: 20px;
-  position: absolute;
-  top: 24px;
-  left: 22px;
-  background-color: #0E8F70;
+  fill: url(#remplissage);
+  stroke: none;
 }
 body .coeurI .i2 {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  right: -35px;
-  background-color: #FF79DA;
+  width: 30px;
+  position: relative;
+}
+body .coeurI .i2:hover {
+  opacity: 0;
+  transition: 0.5s;
 }
 
 /**/
