@@ -1044,6 +1044,7 @@ footer ul li {
   .fonctio ol {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
   .fonctio ol li {
     width: 20%;
@@ -1095,11 +1096,12 @@ footer ul li {
   .menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding: 40px 0;
     background-color: #f6f6f6;
   }
   .entree {
-    padding-top: 30px;
+    padding: 30px 20px 0 20px;
     width: 32%;
   }
   .entree ul {
