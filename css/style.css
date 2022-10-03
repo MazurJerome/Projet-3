@@ -161,21 +161,6 @@ footer h2 {
   text-align: center;
 }
 
-* {
-  cursor: pointer;
-}
-
-/**/
-/**/
-/* animation */
-/* load */
-.loader {
-  z-index: -1;
-  position: relative;
-  animation: chargement 2s ease-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
 @keyframes chargement {
   0% {
     z-index: 9;
@@ -189,42 +174,6 @@ footer h2 {
     z-index: -1;
     opacity: 0;
   }
-}
-.loader div {
-  width: 130px;
-  height: 130px;
-  position: absolute;
-  border-top: 20px solid;
-  border-radius: 50%;
-}
-.loader .loadFond {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  border: none;
-  background-color: #EAEAEA;
-}
-.loader .load1 {
-  left: 35%;
-  top: 100px;
-  transform: skew(-10deg) translateX(50px) rotate(45deg);
-  animation: rot1 1.5s ease infinite;
-  border-color: #9356DC;
-}
-.loader .load2 {
-  left: 35%;
-  top: 100px;
-  transform: skew(-10deg) rotate(165deg);
-  animation: rot2 1.5s ease infinite;
-  border-color: #FF79DA;
-}
-.loader .load3 {
-  left: 35%;
-  top: 100px;
-  transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(285deg);
-  animation: rot3 1.5s ease infinite;
-  border-color: #99E2D0;
 }
 @keyframes rot1 {
   100% {
@@ -255,84 +204,6 @@ footer h2 {
     width: 40px;
   }
 }
-
-/* menu 1*/
-.entree {
-  height: 310px;
-  width: 100%;
-}
-.entree ul {
-  position: relative;
-}
-.entree ul li {
-  width: 375px;
-  position: absolute;
-}
-.entree ul .li1 {
-  top: 5px;
-  animation: chargementMenu1 1s;
-}
-.entree ul .li2 {
-  top: 100px;
-  animation: chargementMenu2 2s;
-}
-.entree ul .li3 {
-  top: 200px;
-  animation: chargementMenu3 3s;
-}
-.entree ul .li4 {
-  top: 300px;
-  animation: chargementMenu4 4s;
-}
-
-.plats {
-  height: 310px;
-  width: 100%;
-}
-.plats ul {
-  position: relative;
-}
-.plats ul li {
-  width: 375px;
-  position: absolute;
-}
-.plats ul .li1 {
-  top: 5px;
-  animation: chargementMenu1 1s;
-}
-.plats ul .li2 {
-  top: 100px;
-  animation: chargementMenu2 2s;
-}
-.plats ul .li3 {
-  top: 200px;
-  animation: chargementMenu3 3s;
-}
-
-.desserts {
-  height: 310px;
-  width: 100%;
-}
-.desserts ul {
-  position: relative;
-}
-.desserts ul li {
-  width: 375px;
-  position: absolute;
-}
-.desserts ul .li1 {
-  top: 5px;
-  animation: chargementMenu1 1s;
-}
-.desserts ul .li2 {
-  top: 100px;
-  animation: chargementMenu2 2s;
-}
-.desserts ul .li3 {
-  top: 200px;
-  animation: chargementMenu3 3s;
-}
-
 @keyframes chargementMenu1 {
   0% {
     top: 10px;
@@ -389,6 +260,20 @@ footer h2 {
     top: 300px;
   }
 }
+@keyframes chargementMenu5 {
+  0% {
+    opacity: 0;
+    top: -10px;
+  }
+  50% {
+    opacity: 0;
+    top: -10px;
+  }
+  100% {
+    opacity: 1;
+    top: -15px;
+  }
+}
 @keyframes prixSlide {
   0% {
     width: 0px;
@@ -408,6 +293,143 @@ footer h2 {
     transform: rotate(360deg);
   }
 }
+* {
+  cursor: pointer;
+}
+
+/* load */
+.loader {
+  z-index: -1;
+  position: relative;
+  animation: chargement 2s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.loader div {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-top: 20px solid;
+  border-radius: 50%;
+}
+.loader .loadFond {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  background-color: #EAEAEA;
+}
+.loader .load1 {
+  left: 35%;
+  top: 100px;
+  transform: skew(-10deg) translateX(50px) rotate(45deg);
+  animation: rot1 1.5s ease infinite;
+  border-color: #9356DC;
+}
+.loader .load2 {
+  left: 35%;
+  top: 100px;
+  transform: skew(-10deg) rotate(165deg);
+  animation: rot2 1.5s ease infinite;
+  border-color: #FF79DA;
+}
+.loader .load3 {
+  left: 35%;
+  top: 100px;
+  transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(285deg);
+  animation: rot3 1.5s ease infinite;
+  border-color: #99E2D0;
+}
+
+/* menu 1*/
+.entree {
+  height: 310px;
+  width: 100%;
+}
+.entree ul {
+  position: relative;
+}
+.entree ul li {
+  width: 360px;
+  position: absolute;
+}
+.entree ul .li1 {
+  top: 5px;
+  animation: chargementMenu1 1s;
+}
+.entree ul .li2 {
+  top: 100px;
+  animation: chargementMenu2 2s;
+}
+.entree ul .li3 {
+  top: 200px;
+  animation: chargementMenu3 3s;
+}
+.entree ul .li4 {
+  top: 300px;
+  animation: chargementMenu4 4s;
+}
+
+.plats {
+  height: 310px;
+  width: 100%;
+}
+.plats ul {
+  position: relative;
+}
+.plats ul li {
+  width: 360px;
+  position: absolute;
+}
+.plats ul .li1 {
+  top: 5px;
+  animation: chargementMenu1 1s;
+}
+.plats ul .li2 {
+  top: 100px;
+  animation: chargementMenu2 2s;
+}
+.plats ul .li3 {
+  top: 200px;
+  animation: chargementMenu3 3s;
+}
+.plats ul .li5 {
+  height: 100px;
+  top: -15px;
+  animation: chargementMenu5 1s;
+}
+.plats ul .li5 .prix {
+  padding: 40px 10px 5px 10px;
+}
+.plats ul .li5 .iconeMenu {
+  height: 100px;
+}
+
+.desserts {
+  height: 310px;
+  width: 100%;
+}
+.desserts ul {
+  position: relative;
+}
+.desserts ul li {
+  width: 360px;
+  position: absolute;
+}
+.desserts ul .li1 {
+  top: 5px;
+  animation: chargementMenu1 1s;
+}
+.desserts ul .li2 {
+  top: 100px;
+  animation: chargementMenu2 2s;
+}
+.desserts ul .li3 {
+  top: 200px;
+  animation: chargementMenu3 3s;
+}
+
 /**/
 /**/
 /**/
@@ -541,7 +563,7 @@ form input:focus-visible {
 
 .boutonResto {
   background-color: white;
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
@@ -634,8 +656,8 @@ body .coeurI .i2:hover {
 .coeurIcone .fa-solid {
   color: transparent;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   opacity: 0;
 }
 .coeurIcone .fa-solid:hover {
@@ -661,8 +683,9 @@ body .coeurI .i2:hover {
 }
 .boutonResto1 .restoMenu {
   width: 100%;
+  height: 95px;
   position: absolute;
-  border-radius: 20px 20px 0 0;
+  border-radius: 40px 40px 0 0;
   bottom: -30px;
   z-index: 2;
   background-color: #f6f6f6;
@@ -682,16 +705,17 @@ body .coeurI .i2:hover {
   flex-direction: row;
 }
 .menu li {
-  width: 375px;
+  width: 360px;
   height: 80px;
 }
 .menu .cadreMenu {
-  width: 375px;
+  width: 360px;
   overflow: hidden;
 }
 .menu .cadreMenu .menuText {
   display: flex;
   flex-direction: column;
+  margin: 12px 0;
   flex: 1 5 auto;
   white-space: nowrap;
   overflow: hidden;
@@ -699,7 +723,7 @@ body .coeurI .i2:hover {
 }
 .menu .cadreMenu .menuText h5, .menu .cadreMenu .menuText p {
   padding: 0;
-  margin: 12px 0 10px 9px;
+  margin: 4px 0 4px 9px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -710,26 +734,43 @@ body .coeurI .i2:hover {
 .menu .cadreMenu .menuText p {
   font-size: 16px;
 }
+.menu .cadreMenu .menuTextPetit {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  flex: 1 5 auto;
+}
+.menu .cadreMenu .menuTextPetit h5, .menu .cadreMenu .menuTextPetit p {
+  padding: 0;
+  margin: 4px 0 4px 9px;
+}
+.menu .cadreMenu .menuTextPetit h5 {
+  font-size: 20px;
+}
+.menu .cadreMenu .menuTextPetit p {
+  font-size: 16px;
+}
 .menu .cadreMenu .prix {
   min-width: 40px;
-  padding: 10px 10px 5px 10px;
+  padding: 30px 10px 5px 10px;
   font-weight: bold;
 }
 .menu .cadreMenu .iconeMenu {
   position: relative;
   width: 0;
+  height: 80px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 5px 5px;
+  margin: 0 0 0 5px;
   border-radius: 0 20px 20px 0;
 }
 .menu .cadreMenu .iconeMenu i {
   position: absolute;
   left: 20px;
   padding: 0;
-  font-size: 30px;
+  font-size: 25px;
   background-color: white;
   border-radius: 30px;
   color: #99E2D0;
@@ -743,7 +784,7 @@ body .coeurI .i2:hover {
 
 .entree, .plats, .desserts {
   background-color: #f6f6f6;
-  padding: 30px 0 10px 0;
+  padding: 30px 0 35px 0;
   margin: 0;
 }
 .entree h4, .plats h4, .desserts h4 {
@@ -910,7 +951,7 @@ footer ul li {
   .fonctio ol li {
     width: 20%;
     height: 30px;
-    font-weight: 12px;
+    font-weight: 600;
   }
   .restaurant h2 {
     display: flex;
@@ -947,9 +988,12 @@ footer ul li {
     align-items: center;
     box-shadow: 1px 3px 5px 1px #e9e9e9;
     border-radius: 25% 10%;
-    height: 70px;
+    height: 80px;
     width: 50%;
     max-width: 325px;
+  }
+  .boutonResto1 .restoMenu h3 {
+    font-size: 23px;
   }
   .menu {
     display: flex;
@@ -960,7 +1004,7 @@ footer ul li {
   }
   .entree {
     padding-top: 30px;
-    width: 32%;
+    width: 40%;
   }
   .entree .barreTitreMenu {
     display: none;
@@ -969,7 +1013,7 @@ footer ul li {
     width: 30%;
   }
   .plats {
-    width: 32%;
+    width: 40%;
   }
   .plats .barreTitreMenu {
     display: none;
@@ -978,7 +1022,7 @@ footer ul li {
     width: 30%;
   }
   .desserts {
-    width: 32%;
+    width: 40%;
   }
   .desserts .barreTitreMenu {
     display: none;
@@ -1004,7 +1048,7 @@ footer ul li {
   .fonctio ol li {
     width: 20%;
     height: 30px;
-    font-weight: 12px;
+    font-weight: 600;
   }
   .restaurant h2 {
     display: flex;
@@ -1041,9 +1085,12 @@ footer ul li {
     align-items: center;
     box-shadow: 1px 3px 5px 1px #e9e9e9;
     border-radius: 25% 10%;
-    height: 70px;
+    height: 80px;
     width: 50%;
     max-width: 325px;
+  }
+  .boutonResto1 .restoMenu h3 {
+    font-size: 23px;
   }
   .menu {
     display: flex;
